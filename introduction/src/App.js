@@ -3,6 +3,7 @@ import HelloWord from './components/HelloWord';
 import SayMyName from './components/SayMyName';
 import Pessoa from './components/Pessoa';
 import Frase from './components/Frase';
+import List from './components/List';
 
 
 function App() {
@@ -21,14 +22,6 @@ function App() {
   const nome = "Jéssica P ires Rodrigues";
   return (
     <div className="App">
-    <view>
-      {/*
-      <h1>Hello World React</h1>
-      <p>Olá, {nomeCompleto}</p>
-      <p>Multiplicação: {multp(10, 7)}</p>
-      <img src={url} alt="Imagem" /> 
-      */}
-    </view>
     <Frase/>
       <HelloWord/>
       <SayMyName nome="Jéssica" />
@@ -40,6 +33,7 @@ function App() {
         profissao="Professor"
         foto="https://via.placeholder.com/250"
       />
+      <List/>
     </div>
   );
 }
